@@ -1,0 +1,8 @@
+<h1>Pages#newboard</h1>
+<%= form_tag("/pages/newboard", method: :post) do %>
+  <%= label_tag :name %>
+  <%= text_field_tag :name %><br>
+  <%= label_tag :summary %>
+  <%= text_field_tag :summary %><br>
+  <%= submit_tag "submit" %>
+<% end %>
